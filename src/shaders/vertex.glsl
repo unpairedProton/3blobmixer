@@ -1,5 +1,6 @@
 #include simplexNoise4d.glsl
 
+
 attribute vec3 tangent;
 uniform float uTime;
 uniform float uPositionFrequnecy;
@@ -31,7 +32,7 @@ void main() {
     csm_Position += blob * normal;
 
     A += getBlob(A) * normal;
-B += getBlob(B) * normal;
+    B += getBlob(B) * normal;
 
 vec3 shadowA = normalize(A - csm_Position);
 vec3 shadowB = normalize(B - csm_Position);
