@@ -3,7 +3,7 @@
 vec4 permute(vec4 t) {
   return mod((t * 34.0 + 1.0) * t, 289.0);
 }
-
+s
 vec4 taylorInvSqrt(vec4 r) {
   return 1.79284291400159 - 0.85373473456387 * r;
 }
@@ -13,8 +13,7 @@ float snoise(vec4 v) {
   vec4 i = floor(v + dot(v, C.yyyy));
   vec4 x0 = v - i + dot(i, C.xxxx);
   vec4 i1 = i + C.yyyy;
-  vec4 x1 = x0 - C.yyyy;
-  vec4 i2 = i + C.zzzz;
+  vec4 x1 = x0 - C.yyyy;  vec4 i2 = i + C.zzzz;
   vec4 x2 = x0 - C.zzzz;
   vec4 i3 = i + C.wwww;
   vec4 x3 = x0 - C.wwww;
